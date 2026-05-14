@@ -1,7 +1,7 @@
 import "./style.css";
 import { init } from "universalviewer";
 import "universalviewer/dist/esm/index.css";
-import meSprite from "universalviewer/dist/mejs-controls.svg";
+//import meSprite from "universalviewer/dist/mejs-controls.svg";
 
 const urlParams = new URLSearchParams(window.location.search);
 const data = {
@@ -11,6 +11,6 @@ const data = {
 const uv = init("uv", data);
 uv.on("configure", function ({ config, cb }) {
   cb({
-    modules: { mediaElementCenterPanel: { options: { iconSprite: meSprite } } }
+//    modules: { mediaElementCenterPanel: { options: { iconSprite: meSprite } } }
   });
 });
